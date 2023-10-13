@@ -30,16 +30,18 @@
 + SNP – rs ID  
 + beta – The effect size. If the trait is binary then log(OR) should be used  
 + se – The standard error of the effect size  
-+ effect_allele – The allele of the SNP which has the effect marked in beta（effect_allele指基因组上与特定表型相关的等位基因，对表型和疾病有贡献的等位基因）  
++ effect_allele – The allele of the SNP which has the effect marked in beta（effect_allele指基因组上与特定表型相关的等位基因，对表型和疾病有贡献的等位基因）
+  
+<br>
 
-
-  其他可能有助于MR预处理或分析的列包括：  
+其他可能有助于MR预处理或分析的列包括：  
 + other_allele – The non-effect allele
 + eaf – The effect allele frequency
-+ Phenotype – The name of the phenotype for which the SNP has an effect  
++ Phenotype – The name of the phenotype for which the SNP has an effect
+  
+<br>
 
-
-  可以提供额外的信息（可选，对于分析非必须）：  
+可以提供额外的信息（可选，对于分析非必须）：  
 + chr – Physical position of variant (chromosome)
 + position – Physical position of variant (position)
 + samplesize – Sample size for estimating the effect size
@@ -48,5 +50,7 @@
 + pval – The P-value for the SNP’s association with the exposure
 + units – The units in which the effects are presented
 + gene – The gene or other annotation for the the SNP  
+
+<br>
 
 *参考资料*：https://gwaslab.org/2021/06/24/mr/
