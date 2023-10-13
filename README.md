@@ -32,7 +32,7 @@
 <br>
 
 ## 数据格式
-对于暴露因素的GWAS数据，TwoSampleMR需要一个工具变量的data frame，每行对应一个SNP，至少需要4列，分别为：  
+对于暴露因素的GWAS数据，TwoSampleMR需要一个工具变量的data frame，每行对应一个SNP，至少需要4列，分别为（数据框的列名必须与下方一致）：  
 + SNP – rs ID  
 + beta – The effect size. If the trait is binary then log(OR) should be used  
 + se – The standard error of the effect size  
