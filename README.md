@@ -7,12 +7,13 @@
 如果一个基因变异`Z` 是某个暴露因素`X`的因果变量，并且对结果`Y`没有直接因果关系，那么这个基因变异`Z`与结果`Y`的关联，只能通过`X`对`Y`的因果关系而被观察到（X -> Y）。
 
 ## 方法概览
-使用`TwoSampleMR`R包运行的两样本MR简单流程    
+使用`TwoSampleMR`R包运行的两样本MR简单流程   
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "flows")
 
 + 主要步骤
 1. 读取暴露因素GWAS数据
 
-2. 选取合适的工具变量（如有必要，需要进行clumping）
+2. 选取合适的工具变量【如有必要，需要进行clumping。对于一个标准的两样本MR分析来说，我们需要确保工具变量之间是互相独立的，即不存在显著的连锁不平衡（LD），在读取完数据后应当对其进行LD Clumping】
 
 3. 读取结果GWAS数据，提取上述的工具变量的SNP
 
@@ -53,4 +54,6 @@
 
 <br>
 
-*参考资料*：https://gwaslab.org/2021/06/24/mr/
+*参考资料*：  
+[1] https://gwaslab.org/2021/06/24/mr/  
+[2] https://mrcieu.github.io/TwoSampleMR/articles/introduction.html
