@@ -8,7 +8,6 @@
 
 ## 方法概览
 使用`TwoSampleMR`R包运行的两样本MR简单流程   
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "flows")
 
 + 主要步骤
 1. 读取暴露因素GWAS数据
@@ -25,6 +24,8 @@
    1. 散点图  
    2. 森林图  
    3. 漏斗图  
+
+![alt text](https://github.com/naFgG/TwoSampleMR/tree/main/images/flows.png "flows")
 
 ## 数据格式
 对于暴露因素的GWAS数据，TwoSampleMR需要一个工具变量的data frame，每行对应一个SNP，至少需要4列，分别为：  
